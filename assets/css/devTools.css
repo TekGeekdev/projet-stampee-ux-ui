@@ -1,0 +1,38 @@
+/* Debug CSS - Dev Tools */
+
+/* Appliquer une bordure rouge à tous les éléments pour les voir */
+* {
+    outline: 1px dotted rgba(255, 0, 0, 0.3);
+}
+
+/* Mettre en évidence les divs avec des couleurs différentes */
+/* div {
+    outline: 1px solid rgba(0, 0, 255, 0.3);
+    background-color: rgba(0, 0, 255, 0.05);
+}
+
+/* Voir les marges et paddings */
+/* * {
+    box-shadow: 0 0 0 1px rgba(255, 0, 0, 0.3);
+}
+
+/* Afficher les tailles des éléments */
+/* .debug-info::after {
+    content: attr(data-debug);
+    position: absolute;
+    background: black;
+    color: white;
+    font-size: 10px;
+    padding: 2px;
+    top: 0;
+    left: 0;
+} */
+
+/* Centrer visuellement tous les éléments en mode flex pour tester l'alignement */
+/* .flex-debug * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    background: rgba(0, 255, 0, 0.1);
+} */ 

@@ -10,7 +10,9 @@
 <body>
     <nav id="nav-principale">
         <div>
-            <img src="#" alt="logo site web">
+            <svg>
+                <use xlink:href="assets/img/logo.svg" fill="blue"></use>
+            </svg>
             <form action="index.html">
                 <label for="recherche">recherche
                     <input type="text" placeholder="Recherche" id="recherche">
@@ -71,6 +73,71 @@
             </article>
         </section>
         <aside>
+            <form action="index.html">
+                <h2>Filtres</h2>
+                <div>
+                    <h3>État timbre</h3>
+                    <label for="inutilise">Inutilisé</label>
+                    <input type="radio" name="etat-timbre" id="inutilise">
+                    <label for="utilise">Utilisé</label>
+                    <input type="radio" name="etat-timbre" id="utilise">
+                    <label for="oblitere">Oblitéré</label>
+                    <input type="radio" name="etat-timbre" id="oblitere">
+                    <label for="sans-gomme">Sans gomme</label>
+                    <input type="radio" name="etat-timbre" id="sans-gomme">
+                    <label for="deteriore">Détérioré</label>
+                    <input type="radio" name="etat-timbre" id="deteriore">
+                    <label for="repare">Réparé</label>
+                    <input type="radio" name="etat-timbre" id="repare">
+                    <label for="tache">Taché</label>
+                    <input type="radio" name="etat-timbre" id="tache">
+                    <label for="mal-centre">Mal centré</label>
+                    <input type="radio" name="etat-timbre" id="mal-centre">
+                </div>
+                <div>
+                  <h3>Mise à prix</h3>
+                  <label for="minimum">Minimum</label>
+                  <input type="text" name="minimum" id="minimum" placeholder="Mise minimum">
+                  <p>&</p>
+                  <label for="maximum">Maximum</label>
+                  <input type="text" name="maximum" id="maximum" placeholder="Mise maximum">
+                </div>
+                <div>
+                    <h3>Pays d'édition</h3>
+                    <select name="pays-edition">
+                        <option value="" selected disabled>Selectionner un pays</option>
+                        <option value="US">États-Unis</option>
+                        <option value="france">France</option>
+                        <option value="allemagne">Allemagne</option>
+                        <option value="suisse">Suisse</option>
+                        <option value="chine">Chine</option>
+                        <option value="japon">Japon</option>
+                        <option value="canada">Canada</option>
+                        <option value="italie">Italie</option>
+                        <option value="russie">Russie</option>
+                    </select>
+                </div>
+                <div>
+                    <h3>Rareté</h3>
+                    <label for="ordinaire">Ordinaire</label>
+                    <input type="checkbox" name="ordinaire" id="ordinaire">
+                    <label for="rarete">Rareté</label>
+                    <input type="checkbox" name="rarete" id="rarete">
+                    <label for="faux">Faux ou imitatition</label>
+                    <input type="checkbox" name="faux" id="faux">
+                    <label for="variant-erreur">Variante ou erreur</label>
+                    <input type="checkbox" name="variant-erreur" id="variant-erreur">
+                    <label for="essai">Essai</label>
+                    <input type="checkbox" name="essai" id="essai">
+                    <label for="particularite">Particularité</label>
+                    <input type="checkbox" name="particularite" id="particularite">
+                    <label for="collection">Dans une collection</label>
+                    <input type="checkbox" name="collection" id="collection">
+                    <label for="isole">Isolé</label>
+                    <input type="checkbox" name="isole" id="isole">
+                </div>
+                <input type="submit" value="">
+            </form>
         </aside>
     </main>
     <footer id="pied-page">
