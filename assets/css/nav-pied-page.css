@@ -1,5 +1,45 @@
 [id="nav-pied-page"]{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--couleurr-primaire);
+    padding: var(--rythme-moyen);
+}
+
+[id="nav-pied-page"] .plan-de-site{
+    display: flex;
+    gap: var(--basique-gap);
+    flex-wrap: wrap;
+}
+
+[id="nav-pied-page"] :is(a,h2,span){
+    color: var(--gris-100);
+}
+
+[id="nav-pied-page"] ul{
+    list-style: none;
+}
+[id="nav-pied-page"] a{
+    text-decoration: none;
+
+}
+
+[id="nav-pied-page"] .titre-liste h2+ul,
+[id="nav-pied-page"] .titre-liste h2+form{
+    margin-top: var(--rythme-petit);
+}
+
+[id="nav-pied-page"] .titre-liste li+li{
+    margin-top: var(--rythme-mince);
+}
+
+[id="nav-pied-page"] .plan-de-site+.copyright-site{
+    margin-top: var(--rythme-moyen);
+}
+
+[id="nav-pied-page"] .copyright-site{
+    display: flex;
+    gap: var(--basique-gap);
 }

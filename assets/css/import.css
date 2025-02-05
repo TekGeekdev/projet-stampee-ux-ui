@@ -15,7 +15,7 @@
 @import url("bouton.css");
 /* FIXME: je cherche un meilleur nom pour le fichier pas envie de franglish */
 @import url("input-selection.css"); 
-@import url("galerie.css");  
+@import url("galerie.css");   
 
 /* devtools */
 @import url("devTools.css");

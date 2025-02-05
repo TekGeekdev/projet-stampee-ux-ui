@@ -6,7 +6,7 @@ img{
     max-width: 100%;
 }
 
-p,a,label{
+p,a,label,span{
     font-family: var(--police-p);
 }
 
