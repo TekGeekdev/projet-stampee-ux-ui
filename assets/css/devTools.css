@@ -1,9 +1,9 @@
 /* Debug CSS - Dev Tools */
 
 /* Appliquer une bordure rouge à tous les éléments pour les voir */
-* {
+/* * {
     outline: 1px dotted rgba(255, 0, 0, 0.3);
-}
+} */
 
 /* Mettre en évidence les divs avec des couleurs différentes */
 /* div {

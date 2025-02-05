@@ -1,10 +1,29 @@
 .filtres>form{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: var(--rythme-regulier);
 }
 
 .filtres .filtres-vertical{
     display: flex;
     flex-direction: column;
+}
+
+.filtres h3+:is(div,label, select){
+    margin-top: var(--rythme-petit);
+}
+
+.filtres section :is(div+div,div+p,p+div) {
+    margin-top: var(--rythme-mince);
+}
+
+.filtres {
+    border: solid 2px var(--couleur-tertiaire);
+    padding: var(--rythme-mince);
+    
+}
+
+.filtres div{
+    display: flex;
+    justify-content: space-between;
 }

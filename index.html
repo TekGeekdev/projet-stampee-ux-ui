@@ -21,13 +21,14 @@
                         <input type="text" placeholder="Recherche" id="recherche">
                     </label>
                 </form>
-                <label for="devises">Devise :</label>
+                <!-- <label for="devises">Devise :</label> -->
                 <select name="devises" id="devises">
                     <option value="euros">Euros</option>
                     <option value="dollarCanadien" selected>Dollar canadien</option>
                     <option value="dollarUS">Dollar US</option>
                 </select>
-                <label for="langues">Langue :</label>
+                 <!-- FIXME: dois laisser les labels ? -->
+                <!-- <label for="langues">Langue :</label> -->
                 <select name="langues" id="langues">
                     <option value="français" selected>Français</option>
                     <option value="anglais">Anglais</option>
@@ -78,34 +79,54 @@
             <aside class="filtres">
                 <form action="index.html">
                     <h2>Filtres</h2>
-                    <div class="filtres-vertical">
+                    <section class="filtres-vertical">
                         <h3>État timbre</h3>
-                        <label for="inutilise">Inutilisé</label>
-                        <input type="radio" name="etat-timbre" id="inutilise">
-                        <label for="utilise">Utilisé</label>
-                        <input type="radio" name="etat-timbre" id="utilise">
-                        <label for="oblitere">Oblitéré</label>
-                        <input type="radio" name="etat-timbre" id="oblitere">
-                        <label for="sans-gomme">Sans gomme</label>
-                        <input type="radio" name="etat-timbre" id="sans-gomme">
-                        <label for="deteriore">Détérioré</label>
-                        <input type="radio" name="etat-timbre" id="deteriore">
-                        <label for="repare">Réparé</label>
-                        <input type="radio" name="etat-timbre" id="repare">
-                        <label for="tache">Taché</label>
-                        <input type="radio" name="etat-timbre" id="tache">
-                        <label for="mal-centre">Mal centré</label>
-                        <input type="radio" name="etat-timbre" id="mal-centre">
-                    </div>
-                    <div>
-                        <h3 class="filtres-vertical">Mise à prix</h3>
-                        <label for="minimum">Minimum</label>
-                        <input type="text" name="minimum" id="minimum" placeholder="Mise minimum">
+                        <div>
+                            <label for="inutilise">Inutilisé</label>
+                            <input type="radio" name="etat-timbre" id="inutilise">
+                        </div>
+                        <div>
+                            <label for="utilise">Utilisé</label>
+                            <input type="radio" name="etat-timbre" id="utilise">
+                        </div>
+                        <div>
+                            <label for="oblitere">Oblitéré</label>
+                            <input type="radio" name="etat-timbre" id="oblitere">
+                        </div>
+                        <div>
+                            <label for="sans-gomme">Sans gomme</label>
+                            <input type="radio" name="etat-timbre" id="sans-gomme">
+                        </div>
+                        <div>
+                            <label for="deteriore">Détérioré</label>
+                            <input type="radio" name="etat-timbre" id="deteriore">
+                        </div>
+                        <div>
+                            <label for="repare">Réparé</label>
+                            <input type="radio" name="etat-timbre" id="repare">
+                        </div>
+                        <div>
+                            <label for="tache">Taché</label>
+                            <input type="radio" name="etat-timbre" id="tache">
+                        </div>
+                        <div>
+                            <label for="mal-centre">Mal centré</label>
+                            <input type="radio" name="etat-timbre" id="mal-centre">
+                        </div>
+                    </section>
+                    <section>
+                        <h3>Mise à prix</h3>
+                        <div>
+                            <label for="minimum">Minimum</label>
+                            <input type="text" name="minimum" id="minimum" placeholder="Mise minimum">
+                        </div>
                         <p>&</p>
-                        <label for="maximum">Maximum</label>
-                        <input type="text" name="maximum" id="maximum" placeholder="Mise maximum">
-                    </div>
-                    <div>
+                        <div>
+                            <label for="maximum">Maximum</label>
+                            <input type="text" name="maximum" id="maximum" placeholder="Mise maximum">
+                        </div>
+                    </section>
+                    <section>
                         <h3>Pays d'édition</h3>
                         <select name="pays-edition">
                             <option value="" selected disabled>Selectionner un pays</option>
@@ -119,27 +140,43 @@
                             <option value="italie">Italie</option>
                             <option value="russie">Russie</option>
                         </select>
-                    </div>
-                    <div class="filtres-vertical">
+                    </section>
+                    <section class="filtres-vertical">
                         <h3>Rareté</h3>
-                        <label for="ordinaire">Ordinaire</label>
-                        <input type="checkbox" name="ordinaire" id="ordinaire">
-                        <label for="rarete">Rareté</label>
-                        <input type="checkbox" name="rarete" id="rarete">
-                        <label for="faux">Faux ou imitatition</label>
-                        <input type="checkbox" name="faux" id="faux">
-                        <label for="variant-erreur">Variante ou erreur</label>
-                        <input type="checkbox" name="variant-erreur" id="variant-erreur">
-                        <label for="essai">Essai</label>
-                        <input type="checkbox" name="essai" id="essai">
-                        <label for="particularite">Particularité</label>
-                        <input type="checkbox" name="particularite" id="particularite">
-                        <label for="collection">Dans une collection</label>
-                        <input type="checkbox" name="collection" id="collection">
-                        <label for="isole">Isolé</label>
-                        <input type="checkbox" name="isole" id="isole">
-                    </div>
-                    <input type="submit" value="">
+                        <div>
+                            <label for="ordinaire">Ordinaire</label>
+                            <input type="checkbox" name="ordinaire" id="ordinaire">
+                        </div>
+                        <div>
+                            <label for="rarete">Rareté</label>
+                            <input type="checkbox" name="rarete" id="rarete">
+                        </div>
+                        <div>
+                            <label for="faux">Faux ou imitatition</label>
+                            <input type="checkbox" name="faux" id="faux">
+                        </div>
+                        <div>
+                            <label for="variant-erreur">Variante ou erreur</label>
+                            <input type="checkbox" name="variant-erreur" id="variant-erreur">
+                        </div>
+                        <div>
+                            <label for="essai">Essai</label>
+                            <input type="checkbox" name="essai" id="essai">
+                        </div>
+                        <div>
+                            <label for="particularite">Particularité</label>
+                            <input type="checkbox" name="particularite" id="particularite">
+                        </div>
+                        <div>
+                            <label for="collection">Dans une collection</label>
+                            <input type="checkbox" name="collection" id="collection">
+                        </div>
+                        <div>
+                            <label for="isole">Isolé</label>
+                            <input type="checkbox" name="isole" id="isole">
+                        </div>
+                    </section>
+                    <input type="submit" value=" Rechercher" class="bouton">
                 </form>
             </aside>
         </main>

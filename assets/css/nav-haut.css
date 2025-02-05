@@ -33,3 +33,21 @@ nav{
 [id="nav-principale"] input[id="menu-mobile"]{
     display: none;
 }
+
+[id="nav-principale"] input[id="recherche"]{
+    padding: var(--rythme-mince);
+    border-radius: var(--bordure-faible);
+    border: solid 3px var(--couleur-tertiaire);
+}
+
+[id="nav-principale"] select[id="devises"],
+[id="nav-principale"] select[id="langues"]{
+    padding: var(--rythme-tres-mince);
+    border-radius: var(--bordure-faible);
+    border: solid 3px var(--couleur-tertiaire);
+}
+
+[id="nav-principale"] .barre-secondaire{
+    padding: var(--rythme-mince);
+    background-color: var(--couleur-secondaire);
+}

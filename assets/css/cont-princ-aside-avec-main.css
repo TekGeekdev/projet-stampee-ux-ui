@@ -1,5 +1,13 @@
-[id=cont-princ-aside-avec-main]{
+[id="cont-princ-aside-avec-main"]{
     display: flex;
     flex-direction: row-reverse;
-    gap: 20px;
+    gap: var(--basique-gap);
+    justify-content: flex-end;
+}
+[id="cont-princ-aside-avec-main"] .galerie{
+    flex-grow: 1;
+}
+[id="cont-princ-aside-avec-main"] .filtres{
+    /* FIXME: faut il utilise autre chose q'un width dans ce cas? */
+        width: 35ch;
 }
