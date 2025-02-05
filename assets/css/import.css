@@ -5,7 +5,7 @@
 /* layout */
 @import url("body.css");
 @import url("enrobage.css");
-@import url("devTololcs.css");
+@import url("grille-cartes.css");
 
 /* composantes */
 @import url("nav-haut.css");
@@ -13,6 +13,9 @@
 @import url("filtre.css");
 @import url("nav-pied-page.css");
 @import url("bouton.css");
+/* FIXME: je cherche un meilleur nom pour le fichier pas envie de franglish */
+@import url("input-selection.css"); 
+@import url("galerie.css");  
 
 /* devtools */
 @import url("devTools.css");

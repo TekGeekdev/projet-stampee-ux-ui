@@ -7,8 +7,10 @@
     <title>Acceuil</title>
     <link rel="stylesheet" href="assets/css/import.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -18,18 +20,18 @@
                 <img src="assets/img/logo.svg" alt="logo stampee">
                 <form action="index.html">
                     <label for="recherche">recherche
-                        <input type="text" placeholder="Recherche" id="recherche">
+                        <input type="text" placeholder="Recherche" id="recherche" class="input-selection grand-champ">
                     </label>
                 </form>
                 <!-- <label for="devises">Devise :</label> -->
-                <select name="devises" id="devises">
+                <select name="devises" id="devises" class="input-selection">
                     <option value="euros">Euros</option>
                     <option value="dollarCanadien" selected>Dollar canadien</option>
                     <option value="dollarUS">Dollar US</option>
                 </select>
-                 <!-- FIXME: dois laisser les labels ? -->
+                <!-- FIXME: dois laisser les labels ? -->
                 <!-- <label for="langues">Langue :</label> -->
-                <select name="langues" id="langues">
+                <select name="langues" id="langues" class="input-selection">
                     <option value="français" selected>Français</option>
                     <option value="anglais">Anglais</option>
                 </select>
@@ -47,88 +49,148 @@
         </nav>
         <main id="cont-princ-aside-avec-main">
             <section class="galerie">
-                <h2>Catalogue produits</h2>
-                <input type="checkbox" id="format-carte">
-                <input type="checkbox" id="format-liste">
-                <article class="timbre">
-                    <div class="img-avec-favoris">
-                        <img class="timbre-image" src="#" alt="image d'un timbre">
-                        <input class="timbre-favoris" type="checkbox" name="favoris" id="favoris">
-                    </div>
-                    <div class="txt-enchere-ligne">
-                        <p class="timbre-status">Enchères en cours</p>
-                        <p class="timbre-lot">Lot n: 123456</p>
-                    </div>
-                    <div class="entete-enchere">
-                        <h3 class="timbre-titre">nom du timbres</h3>
-                        <p class="timbre-annee">1850-1890</p>
-                        <p class="timbre-etat">État : Neuf</p>
-                    </div>
-                    <div class="txt-enchere-ligne">
-                        <p class="timbre-prix">Prix actuel : </p>
-                        <p class="timbre-temps-restant">temps restant : </p>
-                    </div>
-                    <form action="index.html">
-                        <label for="prix">
-                            <input type="text" name="prix" id="prix">
-                        </label>
-                        <input type="submit" value="save">
-                    </form>
-                </article>
+                <div>
+                    <h2>Catalogue produits</h2>
+                    <input type="checkbox" id="format-carte">
+                    <input type="checkbox" id="format-liste">
+                </div>
+                <div class="grille-cartes">
+                    <article class="timbre">
+                        <div class="img-avec-favoris">
+                            <img class="timbre-image" src="#" alt="image d'un timbre">
+                            <input class="timbre-favoris" type="checkbox" name="favoris" id="favoris">
+                        </div>
+                        <div class="txt-enchere-ligne">
+                            <p class="timbre-status">Enchères en cours</p>
+                            <p class="timbre-lot">Lot n: 123456</p>
+                        </div>
+                        <div class="entete-enchere">
+                            <h3 class="timbre-titre">nom du timbres</h3>
+                            <p class="timbre-annee">1850-1890</p>
+                            <p class="timbre-etat">État : Neuf</p>
+                        </div>
+                        <div class="txt-enchere-ligne">
+                            <p class="timbre-prix">Prix actuel : </p>
+                            <p class="timbre-temps-restant">temps restant : </p>
+                        </div>
+                        <form action="index.html">
+                            <label for="prix">
+                                <input type="text" name="prix" id="prix">
+                            </label>
+                            <input type="submit" value="save">
+                        </form>
+                    </article>
+                    <article class="timbre">
+                        <div class="img-avec-favoris">
+                            <img class="timbre-image" src="#" alt="image d'un timbre">
+                            <input class="timbre-favoris" type="checkbox" name="favoris" id="favoris">
+                        </div>
+                        <div class="txt-enchere-ligne">
+                            <p class="timbre-status">Enchères en cours</p>
+                            <p class="timbre-lot">Lot n: 123456</p>
+                        </div>
+                        <div class="entete-enchere">
+                            <h3 class="timbre-titre">nom du timbres</h3>
+                            <p class="timbre-annee">1850-1890</p>
+                            <p class="timbre-etat">État : Neuf</p>
+                        </div>
+                        <div class="txt-enchere-ligne">
+                            <p class="timbre-prix">Prix actuel : </p>
+                            <p class="timbre-temps-restant">temps restant : </p>
+                        </div>
+                        <form action="index.html">
+                            <label for="prix">
+                                <input type="text" name="prix" id="prix">
+                            </label>
+                            <input type="submit" value="save">
+                        </form>
+                    </article>
+                    <article class="timbre">
+                        <div class="img-avec-favoris">
+                            <img class="timbre-image" src="#" alt="image d'un timbre">
+                            <input class="timbre-favoris" type="checkbox" name="favoris" id="favoris">
+                        </div>
+                        <div class="txt-enchere-ligne">
+                            <p class="timbre-status">Enchères en cours</p>
+                            <p class="timbre-lot">Lot n: 123456</p>
+                        </div>
+                        <div class="entete-enchere">
+                            <h3 class="timbre-titre">nom du timbres</h3>
+                            <p class="timbre-annee">1850-1890</p>
+                            <p class="timbre-etat">État : Neuf</p>
+                        </div>
+                        <div class="txt-enchere-ligne">
+                            <p class="timbre-prix">Prix actuel : </p>
+                            <p class="timbre-temps-restant">temps restant : </p>
+                        </div>
+                        <form action="index.html">
+                            <label for="prix">
+                                <input type="text" name="prix" id="prix">
+                            </label>
+                            <input type="submit" value="save">
+                        </form>
+                    </article>
+                </div>
             </section>
             <aside class="filtres">
                 <form action="index.html">
                     <h2>Filtres</h2>
                     <section class="filtres-vertical">
-                        <h3>État timbre</h3>
-                        <div>
-                            <label for="inutilise">Inutilisé</label>
-                            <input type="radio" name="etat-timbre" id="inutilise">
-                        </div>
-                        <div>
-                            <label for="utilise">Utilisé</label>
-                            <input type="radio" name="etat-timbre" id="utilise">
-                        </div>
-                        <div>
-                            <label for="oblitere">Oblitéré</label>
-                            <input type="radio" name="etat-timbre" id="oblitere">
-                        </div>
-                        <div>
-                            <label for="sans-gomme">Sans gomme</label>
-                            <input type="radio" name="etat-timbre" id="sans-gomme">
-                        </div>
-                        <div>
-                            <label for="deteriore">Détérioré</label>
-                            <input type="radio" name="etat-timbre" id="deteriore">
-                        </div>
-                        <div>
-                            <label for="repare">Réparé</label>
-                            <input type="radio" name="etat-timbre" id="repare">
-                        </div>
-                        <div>
-                            <label for="tache">Taché</label>
-                            <input type="radio" name="etat-timbre" id="tache">
-                        </div>
-                        <div>
-                            <label for="mal-centre">Mal centré</label>
-                            <input type="radio" name="etat-timbre" id="mal-centre">
-                        </div>
+                        <details>
+                            <summary>
+                                <h3>État timbre</h3>
+                            </summary>
+                            <div>
+                                <label for="inutilise">Inutilisé</label>
+                                <input type="radio" name="etat-timbre" id="inutilise">
+                            </div>
+                            <div>
+                                <label for="utilise">Utilisé</label>
+                                <input type="radio" name="etat-timbre" id="utilise">
+                            </div>
+                            <div>
+                                <label for="oblitere">Oblitéré</label>
+                                <input type="radio" name="etat-timbre" id="oblitere">
+                            </div>
+                            <div>
+                                <label for="sans-gomme">Sans gomme</label>
+                                <input type="radio" name="etat-timbre" id="sans-gomme">
+                            </div>
+                            <div>
+                                <label for="deteriore">Détérioré</label>
+                                <input type="radio" name="etat-timbre" id="deteriore">
+                            </div>
+                            <div>
+                                <label for="repare">Réparé</label>
+                                <input type="radio" name="etat-timbre" id="repare">
+                            </div>
+                            <div>
+                                <label for="tache">Taché</label>
+                                <input type="radio" name="etat-timbre" id="tache">
+                            </div>
+                            <div>
+                                <label for="mal-centre">Mal centré</label>
+                                <input type="radio" name="etat-timbre" id="mal-centre">
+                            </div>
+                        </details>
                     </section>
                     <section>
                         <h3>Mise à prix</h3>
                         <div>
                             <label for="minimum">Minimum</label>
-                            <input type="text" name="minimum" id="minimum" placeholder="Mise minimum">
+                            <input type="text" name="minimum" id="minimum" placeholder="Mise minimum"
+                                class="input-selection variante-bleu">
                         </div>
                         <p>&</p>
                         <div>
                             <label for="maximum">Maximum</label>
-                            <input type="text" name="maximum" id="maximum" placeholder="Mise maximum">
+                            <input type="text" name="maximum" id="maximum" placeholder="Mise maximum"
+                                class="input-selection variante-bleu">
                         </div>
                     </section>
                     <section>
                         <h3>Pays d'édition</h3>
-                        <select name="pays-edition">
+                        <select name="pays-edition" class="input-selection variante-bleu">
                             <option value="" selected disabled>Selectionner un pays</option>
                             <option value="US">États-Unis</option>
                             <option value="france">France</option>

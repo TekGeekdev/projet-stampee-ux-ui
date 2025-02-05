@@ -35,16 +35,8 @@ nav{
 }
 
 [id="nav-principale"] input[id="recherche"]{
-    padding: var(--rythme-mince);
-    border-radius: var(--bordure-faible);
-    border: solid 3px var(--couleur-tertiaire);
-}
-
-[id="nav-principale"] select[id="devises"],
-[id="nav-principale"] select[id="langues"]{
-    padding: var(--rythme-tres-mince);
-    border-radius: var(--bordure-faible);
-    border: solid 3px var(--couleur-tertiaire);
+    /* FIXME: je n'arrive pas à agrandir et réduire dynamiquement */
+    flex-basis: var(--special-clp-rechercher);
 }
 
 [id="nav-principale"] .barre-secondaire{
