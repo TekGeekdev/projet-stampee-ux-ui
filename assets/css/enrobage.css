@@ -1,0 +1,12 @@
+.enrobage{
+    display: grid;
+    grid-template-columns: subgrid;
+    gap: 20px;
+
+}
+.enrobage>*{
+    grid-column: 2;
+}
+.plein-plan{
+    grid-column: 1/-1;
+}

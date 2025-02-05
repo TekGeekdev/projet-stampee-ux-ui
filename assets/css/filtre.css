@@ -1,0 +1,10 @@
+.filtres>form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.filtres .filtres-vertical{
+    display: flex;
+    flex-direction: column;
+}

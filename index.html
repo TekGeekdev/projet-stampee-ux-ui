@@ -6,209 +6,214 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acceuil</title>
     <link rel="stylesheet" href="assets/css/import.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <nav id="nav-principale">
-        <div>
-            <svg>
-                <use xlink:href="assets/img/logo.svg" fill="blue"></use>
-            </svg>
-            <form action="index.html">
-                <label for="recherche">recherche
-                    <input type="text" placeholder="Recherche" id="recherche">
-                </label>
-            </form>
-            <label for="devises">Devise :</label>
-            <select name="devises" id="devises">
-                <option value="euros">Euros</option>
-                <option value="dollarCanadien" selected>Dollar canadien</option>
-                <option value="dollarUS">Dollar US</option>
-            </select>
-            <label for="langues">Langue :</label>
-            <select name="langues" id="langues">
-                <option value="français" selected>Français</option>
-                <option value="anglais">Anglais</option>
-            </select>
-            <a href="#">Messagerie</a>
-            <a href="#">Enregistrement</a>
-            <a href="#">Connection</a>
-        </div>
-        <ul>
-            <li><a href="#">Enchères du moment</a></li>
-            <li><a href="#">Actualités</a></li>
-            <li><a href="#">Coup de coeur du lord</a></li>
-            <li><a href="#">Archives</a></li>
-        </ul>
-        <input type="checkbox" id="menu-mobile">
-    </nav>
-    <main id="contenu-principale">
-        <section class="galerie">
-            <h2>Catalogue produits</h2>
-            <input type="checkbox" id="format-carte">
-            <input type="checkbox" id="format-liste">
-            <article class="timbre">
-                <div class="img-avec-favoris">
-                    <img class="timbre-image" src="#" alt="image d'un timbre">
-                    <input class="timbre-favoris" type="checkbox" name="favoris" id="favoris">
-                </div>
-                <div class="txt-enchere-ligne">
-                    <p class="timbre-status">Enchères en cours</p>
-                    <p class="timbre-lot">Lot n: 123456</p>
-                </div>
-                <div class="entete-enchere">
-                    <h3 class="timbre-titre">nom du timbres</h3>
-                    <p class="timbre-annee">1850-1890</p>
-                    <p class="timbre-etat">État : Neuf</p>
-                </div>
-                <div class="txt-enchere-ligne">
-                    <p class="timbre-prix" >Prix actuel : </p>
-                    <p class="timbre-temps-restant">temps restant : </p>
-                </div>
+    <div class="enrobage">
+        <nav id="nav-principale" class="plein-plan">
+            <div class="barre-principale">
+                <img src="assets/img/logo.svg" alt="logo stampee">
                 <form action="index.html">
-                    <label for="prix">
-                        <input type="text" name="prix" id="prix">
-                    </label>
-                    <input type="submit" value="save">
-                </form>
-            </article>
-        </section>
-        <aside>
-            <form action="index.html">
-                <h2>Filtres</h2>
-                <div>
-                    <h3>État timbre</h3>
-                    <label for="inutilise">Inutilisé</label>
-                    <input type="radio" name="etat-timbre" id="inutilise">
-                    <label for="utilise">Utilisé</label>
-                    <input type="radio" name="etat-timbre" id="utilise">
-                    <label for="oblitere">Oblitéré</label>
-                    <input type="radio" name="etat-timbre" id="oblitere">
-                    <label for="sans-gomme">Sans gomme</label>
-                    <input type="radio" name="etat-timbre" id="sans-gomme">
-                    <label for="deteriore">Détérioré</label>
-                    <input type="radio" name="etat-timbre" id="deteriore">
-                    <label for="repare">Réparé</label>
-                    <input type="radio" name="etat-timbre" id="repare">
-                    <label for="tache">Taché</label>
-                    <input type="radio" name="etat-timbre" id="tache">
-                    <label for="mal-centre">Mal centré</label>
-                    <input type="radio" name="etat-timbre" id="mal-centre">
-                </div>
-                <div>
-                  <h3>Mise à prix</h3>
-                  <label for="minimum">Minimum</label>
-                  <input type="text" name="minimum" id="minimum" placeholder="Mise minimum">
-                  <p>&</p>
-                  <label for="maximum">Maximum</label>
-                  <input type="text" name="maximum" id="maximum" placeholder="Mise maximum">
-                </div>
-                <div>
-                    <h3>Pays d'édition</h3>
-                    <select name="pays-edition">
-                        <option value="" selected disabled>Selectionner un pays</option>
-                        <option value="US">États-Unis</option>
-                        <option value="france">France</option>
-                        <option value="allemagne">Allemagne</option>
-                        <option value="suisse">Suisse</option>
-                        <option value="chine">Chine</option>
-                        <option value="japon">Japon</option>
-                        <option value="canada">Canada</option>
-                        <option value="italie">Italie</option>
-                        <option value="russie">Russie</option>
-                    </select>
-                </div>
-                <div>
-                    <h3>Rareté</h3>
-                    <label for="ordinaire">Ordinaire</label>
-                    <input type="checkbox" name="ordinaire" id="ordinaire">
-                    <label for="rarete">Rareté</label>
-                    <input type="checkbox" name="rarete" id="rarete">
-                    <label for="faux">Faux ou imitatition</label>
-                    <input type="checkbox" name="faux" id="faux">
-                    <label for="variant-erreur">Variante ou erreur</label>
-                    <input type="checkbox" name="variant-erreur" id="variant-erreur">
-                    <label for="essai">Essai</label>
-                    <input type="checkbox" name="essai" id="essai">
-                    <label for="particularite">Particularité</label>
-                    <input type="checkbox" name="particularite" id="particularite">
-                    <label for="collection">Dans une collection</label>
-                    <input type="checkbox" name="collection" id="collection">
-                    <label for="isole">Isolé</label>
-                    <input type="checkbox" name="isole" id="isole">
-                </div>
-                <input type="submit" value="">
-            </form>
-        </aside>
-    </main>
-    <footer id="pied-page">
-        <div class="plan-de-site">
-            <div class="titre-liste">
-                <h2>Acheter</h2>
-                <ul>
-                    <li><a href="#">État-Unis</a></li>
-                    <li><a href="#">Afrique</a></li>
-                    <li><a href="#">Asie</a></li>
-                    <li><a href="#">Europe</a></li>
-                    <li><a href="#">Russie</a></li>
-                    <li><a href="#">Commonwealth Britannique</a></li>
-                    <li><a href="#">Monde entier</a></li>
-                </ul>
-            </div>
-            <div class="titre-liste">
-                <h2>Services et ressources</h2>
-                <ul>
-                    <li><a href="#">Vendre vos timbre</a></li>
-                    <li><a href="#">Faire estimer vos timbres</a></li>
-                    <li><a href="#">Contacter un spécialiste</a></li>
-                    <li><a href="#">Embaucher un homme de milieu</a></li>
-                    <li><a href="#">Évènement caritative</a></li>
-                    <li><a href="#">Magasins</a></li>
-                    <li><a href="#">Évènement prochains</a></li>
-                </ul>
-            </div>
-            <div class="titre-liste">
-                <h2>Centre d'aide</h2>
-                <ul>
-                    <li><a href="#">Profil</a></li>
-                    <li><a href="#">Comment faire une offre</a></li>
-                    <li><a href="#">Suivre une enchère</a></li>
-                    <li><a href="#">Trouver l'enchère désirée</a></li>
-                </ul>
-            </div>
-            <div class="titre-liste">
-                <h2>Contactez-nous</h2>
-                <ul>
-                    <li><a href="#">Anglettere</a></li>
-                    <li><a href="#">Les Amériques</a></li>
-                    <li><a href="#">Europe</a></li>
-                    <li><a href="#">Australie</a></li>
-                    <li><a href="#">Contacter le webmestre</a></li>
-                </ul>
-            </div>
-            <div class="titre-liste">
-                <h2>Termes et conditions</h2>
-                <ul>
-                    <li><a href="#">Conditions utilisation</a></li>
-                    <li><a href="#">Politique de confidentialité</a></li>
-                </ul>
-            </div>
-            <div class="titre-liste">
-                <h2>Newsletters</h2>
-                <form action="index.html">
-                    <label for="newsletters">
-                        <input type="text" name="newsletters" id="newsletters" placeholder="Entrez votre email">
+                    <label for="recherche">recherche
+                        <input type="text" placeholder="Recherche" id="recherche">
                     </label>
                 </form>
+                <label for="devises">Devise :</label>
+                <select name="devises" id="devises">
+                    <option value="euros">Euros</option>
+                    <option value="dollarCanadien" selected>Dollar canadien</option>
+                    <option value="dollarUS">Dollar US</option>
+                </select>
+                <label for="langues">Langue :</label>
+                <select name="langues" id="langues">
+                    <option value="français" selected>Français</option>
+                    <option value="anglais">Anglais</option>
+                </select>
+                <a href="#">Messagerie</a>
+                <a href="#">Enregistrement</a>
+                <a href="#">Connection</a>
             </div>
-        </div>
-        <div class="copyright-site">
-            <span>© Design réalisé en collaboration par Patricia, Marc-Olivier et Mathieu</span>
-            <div class="icones-boite">
-                <img src="#" alt="facebook">
-                <img src="#" alt="instagram">
-                <img src="#" alt="youtube">
+            <ul class="barre-secondaire">
+                <li><a href="#">Enchères du moment</a></li>
+                <li><a href="#">Actualités</a></li>
+                <li><a href="#">Coup de coeur du lord</a></li>
+                <li><a href="#">Archives</a></li>
+            </ul>
+            <input type="checkbox" id="menu-mobile">
+        </nav>
+        <main id="cont-princ-aside-avec-main">
+            <section class="galerie">
+                <h2>Catalogue produits</h2>
+                <input type="checkbox" id="format-carte">
+                <input type="checkbox" id="format-liste">
+                <article class="timbre">
+                    <div class="img-avec-favoris">
+                        <img class="timbre-image" src="#" alt="image d'un timbre">
+                        <input class="timbre-favoris" type="checkbox" name="favoris" id="favoris">
+                    </div>
+                    <div class="txt-enchere-ligne">
+                        <p class="timbre-status">Enchères en cours</p>
+                        <p class="timbre-lot">Lot n: 123456</p>
+                    </div>
+                    <div class="entete-enchere">
+                        <h3 class="timbre-titre">nom du timbres</h3>
+                        <p class="timbre-annee">1850-1890</p>
+                        <p class="timbre-etat">État : Neuf</p>
+                    </div>
+                    <div class="txt-enchere-ligne">
+                        <p class="timbre-prix">Prix actuel : </p>
+                        <p class="timbre-temps-restant">temps restant : </p>
+                    </div>
+                    <form action="index.html">
+                        <label for="prix">
+                            <input type="text" name="prix" id="prix">
+                        </label>
+                        <input type="submit" value="save">
+                    </form>
+                </article>
+            </section>
+            <aside class="filtres">
+                <form action="index.html">
+                    <h2>Filtres</h2>
+                    <div class="filtres-vertical">
+                        <h3>État timbre</h3>
+                        <label for="inutilise">Inutilisé</label>
+                        <input type="radio" name="etat-timbre" id="inutilise">
+                        <label for="utilise">Utilisé</label>
+                        <input type="radio" name="etat-timbre" id="utilise">
+                        <label for="oblitere">Oblitéré</label>
+                        <input type="radio" name="etat-timbre" id="oblitere">
+                        <label for="sans-gomme">Sans gomme</label>
+                        <input type="radio" name="etat-timbre" id="sans-gomme">
+                        <label for="deteriore">Détérioré</label>
+                        <input type="radio" name="etat-timbre" id="deteriore">
+                        <label for="repare">Réparé</label>
+                        <input type="radio" name="etat-timbre" id="repare">
+                        <label for="tache">Taché</label>
+                        <input type="radio" name="etat-timbre" id="tache">
+                        <label for="mal-centre">Mal centré</label>
+                        <input type="radio" name="etat-timbre" id="mal-centre">
+                    </div>
+                    <div>
+                        <h3 class="filtres-vertical">Mise à prix</h3>
+                        <label for="minimum">Minimum</label>
+                        <input type="text" name="minimum" id="minimum" placeholder="Mise minimum">
+                        <p>&</p>
+                        <label for="maximum">Maximum</label>
+                        <input type="text" name="maximum" id="maximum" placeholder="Mise maximum">
+                    </div>
+                    <div>
+                        <h3>Pays d'édition</h3>
+                        <select name="pays-edition">
+                            <option value="" selected disabled>Selectionner un pays</option>
+                            <option value="US">États-Unis</option>
+                            <option value="france">France</option>
+                            <option value="allemagne">Allemagne</option>
+                            <option value="suisse">Suisse</option>
+                            <option value="chine">Chine</option>
+                            <option value="japon">Japon</option>
+                            <option value="canada">Canada</option>
+                            <option value="italie">Italie</option>
+                            <option value="russie">Russie</option>
+                        </select>
+                    </div>
+                    <div class="filtres-vertical">
+                        <h3>Rareté</h3>
+                        <label for="ordinaire">Ordinaire</label>
+                        <input type="checkbox" name="ordinaire" id="ordinaire">
+                        <label for="rarete">Rareté</label>
+                        <input type="checkbox" name="rarete" id="rarete">
+                        <label for="faux">Faux ou imitatition</label>
+                        <input type="checkbox" name="faux" id="faux">
+                        <label for="variant-erreur">Variante ou erreur</label>
+                        <input type="checkbox" name="variant-erreur" id="variant-erreur">
+                        <label for="essai">Essai</label>
+                        <input type="checkbox" name="essai" id="essai">
+                        <label for="particularite">Particularité</label>
+                        <input type="checkbox" name="particularite" id="particularite">
+                        <label for="collection">Dans une collection</label>
+                        <input type="checkbox" name="collection" id="collection">
+                        <label for="isole">Isolé</label>
+                        <input type="checkbox" name="isole" id="isole">
+                    </div>
+                    <input type="submit" value="">
+                </form>
+            </aside>
+        </main>
+        <footer id="nav-pied-page" class="plein-plan">
+            <div class="plan-de-site">
+                <div class="titre-liste">
+                    <h2>Acheter</h2>
+                    <ul>
+                        <li><a href="#">État-Unis</a></li>
+                        <li><a href="#">Afrique</a></li>
+                        <li><a href="#">Asie</a></li>
+                        <li><a href="#">Europe</a></li>
+                        <li><a href="#">Russie</a></li>
+                        <li><a href="#">Commonwealth Britannique</a></li>
+                        <li><a href="#">Monde entier</a></li>
+                    </ul>
+                </div>
+                <div class="titre-liste">
+                    <h2>Services et ressources</h2>
+                    <ul>
+                        <li><a href="#">Vendre vos timbre</a></li>
+                        <li><a href="#">Faire estimer vos timbres</a></li>
+                        <li><a href="#">Contacter un spécialiste</a></li>
+                        <li><a href="#">Embaucher un homme de milieu</a></li>
+                        <li><a href="#">Évènement caritative</a></li>
+                        <li><a href="#">Magasins</a></li>
+                        <li><a href="#">Évènement prochains</a></li>
+                    </ul>
+                </div>
+                <div class="titre-liste">
+                    <h2>Centre d'aide</h2>
+                    <ul>
+                        <li><a href="#">Profil</a></li>
+                        <li><a href="#">Comment faire une offre</a></li>
+                        <li><a href="#">Suivre une enchère</a></li>
+                        <li><a href="#">Trouver l'enchère désirée</a></li>
+                    </ul>
+                </div>
+                <div class="titre-liste">
+                    <h2>Contactez-nous</h2>
+                    <ul>
+                        <li><a href="#">Anglettere</a></li>
+                        <li><a href="#">Les Amériques</a></li>
+                        <li><a href="#">Europe</a></li>
+                        <li><a href="#">Australie</a></li>
+                        <li><a href="#">Contacter le webmestre</a></li>
+                    </ul>
+                </div>
+                <div class="titre-liste">
+                    <h2>Termes et conditions</h2>
+                    <ul>
+                        <li><a href="#">Conditions utilisation</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+                <div class="titre-liste">
+                    <h2>Newsletters</h2>
+                    <form action="index.html">
+                        <label for="newsletters">
+                            <input type="text" name="newsletters" id="newsletters" placeholder="Entrez votre email">
+                        </label>
+                    </form>
+                </div>
             </div>
-        </div>
-    </footer>
+            <div class="copyright-site">
+                <span>© Design réalisé en collaboration par Patricia, Marc-Olivier et Mathieu</span>
+                <div class="icones-boite">
+                    <img src="#" alt="facebook">
+                    <img src="#" alt="instagram">
+                    <img src="#" alt="youtube">
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>

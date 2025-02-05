@@ -1,0 +1,35 @@
+nav{
+    background-color: lightgrey;
+}
+[id="nav-principale"] a{
+    display: inline-block;
+    text-decoration: none;
+}
+[id="nav-principale"] a,
+[id="nav-principale"] label{
+    color: var(--gris-50);
+}
+
+[id="nav-principale"] .barre-principale{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: var(--rythme-mince);
+    background-color: var(--couleurr-primaire);
+    & img{
+        max-width: 200px;
+    }
+}
+[id="nav-principale"] .barre-secondaire{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    list-style-type: none;
+
+}
+[id="nav-principale"] input[id="menu-mobile"]{
+    display: none;
+}

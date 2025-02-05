@@ -1,0 +1,5 @@
+[id=cont-princ-aside-avec-main]{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+}

@@ -1,12 +1,17 @@
+/* general */
+@import url("general.css");
+@import url("langue.css");
+
 /* layout */
-@import url("devTololcs.css");
-@import url("devTololcs.css");
+@import url("body.css");
+@import url("enrobage.css");
 @import url("devTololcs.css");
 
 /* composantes */
-@import url("devTololcs.css");
-@import url("devTololcs.css");
-@import url("devTololcs.css");
+@import url("nav-haut.css");
+@import url("cont-princ-aside-avec-main.css");
+@import url("filtre.css");
+@import url("nav-pied-page.css");
 
 /* devtools */
 @import url("devTools.css");
