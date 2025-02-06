@@ -1,14 +1,20 @@
-nav{
-    background-color: lightgrey;
-}
 [id="nav-principale"] a{
     display: inline-block;
-    text-decoration: none;
+    text-decoration-color: transparent;
+    transition-property: text-decoration-color;
+	transition-duration: 500ms;
 }
+[id="nav-principale"] a:hover{
+    text-decoration-color: var(--gris-50);
+    transition-duration: 500ms;
+}
+
 [id="nav-principale"] a,
 [id="nav-principale"] label{
     color: var(--gris-50);
 }
+
+
 
 [id="nav-principale"] .barre-principale{
     display: flex;
@@ -18,8 +24,9 @@ nav{
     gap: 20px;
     padding: var(--rythme-mince);
     background-color: var(--couleurr-primaire);
-    & img{
+    & svg{
         max-width: 200px;
+        fill: hsl(208, 100%, 97%);
     }
 }
 [id="nav-principale"] .barre-secondaire{
@@ -34,12 +41,16 @@ nav{
     display: none;
 }
 
-[id="nav-principale"] input[id="recherche"]{
-    /* FIXME: je n'arrive pas à agrandir et réduire dynamiquement */
-    flex-basis: var(--special-clp-rechercher);
-}
-
 [id="nav-principale"] .barre-secondaire{
     padding: var(--rythme-mince);
     background-color: var(--couleur-secondaire);
+}
+
+[id="nav-principale"] .input-large{
+    flex-grow: 1;
+
+    & input{
+        width: 100%;
+        max-width: 400px;
+    }
 }

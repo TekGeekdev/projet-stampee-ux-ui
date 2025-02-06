@@ -3,6 +3,7 @@
     flex-direction: row-reverse;
     gap: var(--basique-gap);
     justify-content: flex-end;
+    align-items: baseline;
 }
 [id="cont-princ-aside-avec-main"] .galerie{
     flex-grow: 1;

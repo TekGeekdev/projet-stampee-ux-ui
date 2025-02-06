@@ -4,3 +4,8 @@
   background-color: var(--couleur-secondaire);
   border-radius: var(--bordure-faible);
 }
+
+.bouton.reset{
+  border-color: var(--couleur-annulation);
+  border-width: 3px;
+}

@@ -1,6 +1,6 @@
 body{
     display: grid;
-    grid-template-columns: 1fr min(calc(100% - 40px), 1200px) 1fr;
+    grid-template-columns: 1fr min(calc(100% - 40px), 1500px) 1fr;
     gap: 20px;
 }
 

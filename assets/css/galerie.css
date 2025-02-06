@@ -1,0 +1,16 @@
+.galerie>header{
+    display: flex;
+    justify-content: space-between;
+    & input[type=checkbox]{
+        appearance: none;
+    }
+    &>div{
+        display: flex;
+        gap: var(--basique-gap);
+        align-items: center;
+    }
+}
+
+.galerie header+div{
+    margin-top: var(--rythme-regulier);
+}

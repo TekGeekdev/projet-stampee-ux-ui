@@ -12,7 +12,7 @@
 .carte .carte-timbre-favoris{
     appearance: none;
 }
-
+ 
 .carte .carte-timbre-favoris:after {
     content: "";
     position: absolute;
@@ -27,16 +27,26 @@
     display: flex;
     justify-content: space-between;
 }
+.carte .txt-enchere-colonne{
+    display: flex;
+    flex-direction: column;
+}
 
 .carte .entete-enchere div{
     display: flex;
-    gap: var(--basique-gap);
 }
 
 .carte .carte-zone-txt{
     padding: var(--rythme-tres-mince);
 }
 
-.carte .carte-zone-txt :is(div+div,div+form){
+.carte .carte-zone-txt :is(div+div,div+form,h3+div){
     margin-top: var(--rythme-mince);
 }
+
+.carte .mise{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
