@@ -30,22 +30,6 @@
 }
 .filtres .select-a-droite {
     display: flex;
-}
-
-.filtres details > summary {
-    list-style-type: none;
-}
-
-.filtres svg{
-    max-width: 24px;
-}
-
-.filtres summary{
-    display: flex;
-    gap: var(--basique-gap);
-}
-
-.filtres details[open] summary svg {
-    transition: transform 0.3s ease-in-out;
-    transform: rotate(90deg);
+    justify-content: space-between;
+    align-items: center;
 }

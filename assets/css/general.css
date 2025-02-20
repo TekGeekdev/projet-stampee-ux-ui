@@ -6,11 +6,51 @@ img{
     max-width: 100%;
 }
 
-p,a,label,span{
+body{
     font-family: var(--police-p);
-    font-size: var(--p);
+}
+input {
+    font-family: inherit;
 }
 
-h1,h2,h3,h4,h5{
+h1,h2{
     font-family: var(--police-titre);
+}
+header+article,
+article+article{
+    margin-top: var(--rythme-regulier);
+}
+
+h3+p,
+h3+div{
+    margin-top: var(--rythme-petit);
+}
+p+p{
+    margin-top: var(--rythme-mince);
+}
+p{
+    line-height: 1.5;
+}
+
+main>div+section{
+    margin-top: var(--rythme-moyen-clp);
+}
+
+article form+div{
+    margin-top: var(--rythme-petit);
+}
+
+.border-bottom-classique{
+    border-bottom: 2px solid var(--couleur-tertiaire);
+}
+
+.zoomEffet {
+	transform: scale(1.0);
+	transition-property: transform;
+	transition-duration: 200ms;
+}
+
+.zoomEffet:hover {
+	transform: scale(1.05);
+	transition-duration: 200ms;
 }

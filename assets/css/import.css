@@ -16,6 +16,12 @@
 @import url("input-selection.css"); 
 @import url("galerie.css");   
 @import url("carte.css");   
+@import url("grd-img-petites-img.css");   
+@import url("img-ligne-petites.css");   
+@import url("tiroir-vertical.css");   
+@import url("div-et-div-rev-avec-sticky.css");   
+@import url("panneau-controle-img.css");   
+@import url("fil-ariane.css");   
 
 /* devtools */
 @import url("devTools.css");

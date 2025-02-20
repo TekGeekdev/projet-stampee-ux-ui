@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
-    <link rel="stylesheet" href="assets/css/import.css">
+    <title>Fiche timbre</title>
+    <link rel="stylesheet" href="../assets/css/import.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -39,7 +39,8 @@
                     </g>
                 </svg>
                 <form action="index.html" class="input-large">
-                    <input type="text" placeholder="champ de recherche ex : Timbres rares du XIXe siècle" class="input-selection grand-champ" aria-label="champ de recherche">
+                    <input type="text" placeholder="Recherche champ de recherche ex : Timbres rares du XIXe siècle"
+                        class="input-selection grand-champ" aria-label="champ de recherche">
                 </form>
                 <select name="devises" id="devises" class="input-selection" aria-label="Devise monétaire">
                     <option value="euros">Euros</option>
@@ -62,194 +63,161 @@
             </ul>
             <input type="checkbox" id="menu-mobile" aria-label="bouton pour menu mobile">
         </nav>
-        <main id="cont-princ-aside-avec-main">
-            <section class="galerie">
-                <header>
-                    <h2>Galerie philatélique</h2>
-                    <div>
-                        <label for="triage">Triez par : 
-                            <select name="pays-edition" id="triage" class="input-selection variante-bleu">
-                                <option value="" selected disabled>choisissez un type</option>
-                                <option value="alphabetAsc">Ordre A-Z</option>
-                                <option value="AlphabetDesc">Ordre Z-A</option>
-                                <option value="prixAsc">Prix croissant</option>
-                                <option value="prixDesc">Prix décroissant</option>
-                                <option value="tempsCourt">Temps restant le plus court</option>
-                                <option value="tempsLong">Temps restant le plus long</option>
-                                <option value="dateAnc">Date d'émission la plus ancienne</option>
-                                <option value="dateRec">Date d'émission la plus récente</option>
-                            </select>
-                        </label>
-                        <label for="format-carte">
-                            <img src="assets/img/list.svg" alt="image disposition carte" width="24px">
-                            <input type="checkbox" id="format-carte">
-                        </label>
-                        <label for="format-liste">
-                            <img src="assets/img/list-2.svg" alt="image disposition liste" width="24px">
-                            <input type="checkbox" id="format-liste">
-                        </label>
-                    </div>
-                </header>
-                <div class="grille-cartes">
-                    <article class="carte">
-                        <div class="carte-img-avec-favoris">
-                            <img class="carte-timbre-image" src="assets/img/nicolas-timbre" alt="image d'un timbre">
-                            <input class="carte-timbre-favoris" type="checkbox" name="favoris" id="favoris" aria-label="icone pour mettre une enchère en favoris">
-                        </div>
-                        <div class="carte-zone-txt">
-                            <div class="txt-enchere-ligne">
-                                <p class="timbre-status">Enchères en cours</p>
-                                <p class="timbre-lot">Lot n: 123456</p>
-                            </div>
-                            <div class="entete-enchere">
-                                <h3 class="timbre-titre">Nom du timbre</h3>
-                                <div class="txt-enchere-colonne">
-                                    <div class="txt-enchere-ligne">
-                                        <p class="timbre-annee">Année d'émission :</p>
-                                        <p>1850-1890</p>
-                                    </div>
-                                    <div class="txt-enchere-ligne">
-                                        <p class="timbre-etat">État :</p>
-                                        <p>Neuf</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="txt-enchere-colonne">
-                                <div class="txt-enchere-ligne">
-                                    <p class="timbre-prix"><b>Mise actuelle :</b></p>
-                                    <p><b>650 $</b></p>
-                                </div>
-                                <div class="txt-enchere-ligne">
-                                    <p class="timbre-temps-restant"><b>Temps restant :</b></p>
-                                    <p><b>3 jours 21 heures</b></p>
-                                </div>
-                            </div>
-                            <form action="index.html" class="mise">
-                                    <input type="number" name="prix" id="prix" class="input-selection variante-bleu"
-                                        placeholder="Entrez une mise" aria-label="Entrez une mise pour l'action">
-                                <input type="submit" value="Miser" class="bouton">
-                            </form>
-                        </div>
-                    </article>
-                   
+        <main>
+            <div class="fil-ariane">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6" width="24px">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    </svg>
+                    <a href="#">Évènement /</a>
+                    <a href="#">Vente par lots / </a>
+                    <h1>lot n : 1940-01</h1>
                 </div>
-            </section>
-            <aside class="filtres">
-                <form action="index.html">
-                    <h2>Filtres</h2>
-                    <section class="filtres-vertical tiroir-vertical">
-                        <details>
-                            <summary>
-                                <h3>État des timbres</h3>
+                <div>
+                    <a href="#">Précèdent</a>
+                    <a href="#">Suivant</a>
+                </div>
+            </div>
+            <section class="div-et-div-rev-avec-sticky">
+                <div>
+                    <header>
+                        <h2>Timbre "Travail, Famille, Patrie"</h2>
+                    </header>
+                    <article>
+                        <h3 class="border-bottom-classique">Informations générales</h3>
+                        <p><b>Pays d'origine : France</b></p>
+                        <p><b>Année d'émission : 1941</b></p>
+                        <p>Valeur faciale : 1 franc</p>
+                        <p>Contact : <a href="#">Option pour poser des questions au vendeur.</a></p>
+                        <p>Ville ou pays d’expédition : France</p>
+                    </article>
+                    <article>
+                        <h3 class="border-bottom-classique">Informations commerciales</h3>
+                        <div class="div-et-div space-between center">
+                            <div>
+                                <p><b>Mise actuelle : 35 $</b></p>
+                                <p><b>Mise à prix : 10 €</b></p>
+                                <p>Valeur estimée : 15-25 $ (selon état et rareté)</p>
+                                <p>Frais de livraison : 2 $ (France), 5 $ (international)</p>
+                                <p>Assurance : Oui (optionnelle)</p>
+                            </div>
+                            <div>
+                                <form action="#">
+                                    <input type="number" name="mise" id="mise" aria-label="saisir une valeur de mise"
+                                        class="input-selection variante-bleu" placeholder="Placer une mise">
+                                    <input type="submit" value="Placer l'enchère" class="bouton">
+                                </form>
+                                <div>
+                                    <p>Paiement par :</p>
+                                    <div class="img-ligne-petites">
+                                        <a href="https://www.americanexpress.com/fr-ca/"><img src="/assets/img/amex.svg"
+                                                alt="logo american express"></a>
+                                        <a href="https://www.mastercard.ca/fr-ca.html"><img src="/assets/img/mastercard.svg"
+                                                alt="logo mastercard"></a>
+                                        <a href="https://www.visa.ca/fr_CA"><img src="/assets/img/visa.svg"
+                                                alt="logo visa"></a>
+                                        <a href="https://www.paypal.com/ca/home?locale.x=fr_CA"><img
+                                                src="/assets/img/paypal.svg" alt="logo paypal"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- TODO: mettre en favoris -->
+                    </article>
+                    <article class="tiroir-vertical">
+                        <details open>
+                            <summary class="border-bottom-classique">
+                                <h3>Caractéristiques</h3>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="size-6">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
                                 </svg>
                             </summary>
-                            <div>
-                                <label for="inutilise">Inutilisé</label>
-                                <input type="radio" name="etat-timbre" id="inutilise">
-                            </div>
-                            <div>
-                                <label for="utilise">Utilisé</label>
-                                <input type="radio" name="etat-timbre" id="utilise">
-                            </div>
-                            <div>
-                                <label for="oblitere">Oblitéré</label>
-                                <input type="radio" name="etat-timbre" id="oblitere">
-                            </div>
-                            <div>
-                                <label for="sans-gomme">Sans gomme</label>
-                                <input type="radio" name="etat-timbre" id="sans-gomme">
-                            </div>
-                            <div>
-                                <label for="deteriore">Détérioré</label>
-                                <input type="radio" name="etat-timbre" id="deteriore">
-                            </div>
-                            <div>
-                                <label for="repare">Réparé</label>
-                                <input type="radio" name="etat-timbre" id="repare">
-                            </div>
-                            <div>
-                                <label for="tache">Taché</label>
-                                <input type="radio" name="etat-timbre" id="tache">
-                            </div>
-                            <div>
-                                <label for="mal-centre">Mal centré</label>
-                                <input type="radio" name="etat-timbre" id="mal-centre">
-                            </div>
+                            <p><b>État : Très bon (léger jaunissement dû à l'âge)</b></p>
+                            <p>Dimensions : Environ 22 × 26 mm</p>
+                            <p>Forme : Rectangulaire</p>
+                            <p>Dentelure : 13½ x 14</p>
+                            <p>Papier : Papier gommé standard</p>
                         </details>
-                    </section>
-                    <section>
-                        <h3>Mise à prix</h3>
-                        <div>
-                            <label for="minimum">Minimum</label>
-                            <input type="number" name="minimum" id="minimum" placeholder="Mise minimum"
-                                class="input-selection variante-bleu">
-                        </div>
-                        <p>&</p>
-                        <div>
-                            <label for="maximum">Maximum</label>
-                            <input type="number" name="maximum" id="maximum" placeholder="Mise maximum"
-                                class="input-selection variante-bleu">
-                        </div>
-                    </section>
-                    <section class="select-a-droite">
-                        <h3>Pays d'édition</h3>
-                        <select name="pays-edition" class="input-selection variante-bleu" aria-label="filtre pays édition">
-                            <option value="" selected disabled>Sélectionner un pays</option>
-                            <option value="US">États-Unis</option>
-                            <option value="france">France</option>
-                            <option value="allemagne">Allemagne</option>
-                            <option value="suisse">Suisse</option>
-                            <option value="chine">Chine</option>
-                            <option value="japon">Japon</option>
-                            <option value="canada">Canada</option>
-                            <option value="italie">Italie</option>
-                            <option value="russie">Russie</option>
-                        </select>
-                    </section>
-                    <section class="filtres-vertical">
-                        <h3>Rareté</h3>
-                        <div>
-                            <label for="ordinaire">Ordinaire</label>
-                            <input type="checkbox" name="ordinaire" id="ordinaire">
-                        </div>
-                        <div>
-                            <label for="rarete">Rareté</label>
-                            <input type="checkbox" name="rarete" id="rarete">
-                        </div>
-                        <div>
-                            <label for="faux">Faux ou imitation</label>
-                            <input type="checkbox" name="faux" id="faux">
-                        </div>
-                        <div>
-                            <label for="variant-erreur">Variante ou erreur</label>
-                            <input type="checkbox" name="variant-erreur" id="variant-erreur">
-                        </div>
-                        <div>
-                            <label for="essai">Essai</label>
-                            <input type="checkbox" name="essai" id="essai">
-                        </div>
-                        <div>
-                            <label for="particularite">Particularité</label>
-                            <input type="checkbox" name="particularite" id="particularite">
-                        </div>
-                        <div>
-                            <label for="collection">Dans une collection</label>
-                            <input type="checkbox" name="collection" id="collection">
-                        </div>
-                        <div>
-                            <label for="isole">Isolé</label>
-                            <input type="checkbox" name="isole" id="isole">
-                        </div>
-                    </section>
-                    <input type="submit" value="Rechercher" class="bouton">
-                    <input type="reset" value="Réinitialiser les filtres" class="bouton reset">
-                </form>
-            </aside>
+                    </article>
+                    <article class="tiroir-vertical">
+                        <details>
+                            <summary class="border-bottom-classique">
+                                <h3>Authenticité et rareté</h3>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
+                                </svg>
+                            </summary>
+                            <p>Numéro de catalogue : Yvert et Tellier N° 467</p>
+                            <p>Rareté : Assez courant mais recherché par les collectionneurs de la période Vichy</p>
+                            <p>Certificat d'authenticité : Non (peut être vérifié sur demande)</p>
+                            <p>Particularités : Design typique de la propagande du régime de Vichy</p>
+                        </details>
+                    </article>
+                    <article class="tiroir-vertical">
+                        <details>
+                            <summary class="border-bottom-classique">
+                                <h3>Description et contexte</h3>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
+                                </svg>
+                            </summary>
+                            <p>Thème : Régime de Vichy, propagande d’État</p>
+                            <p>Contexte historique : Émis sous le régime de Vichy, ce timbre faisait partie de la
+                                propagande
+                                officielle avec la devise "Travail, Famille, Patrie"</p>
+                            <p>Pays d'origine : 🇫🇷 France</p>
+                            <p>Émission spéciale : Non, émission courante sous le gouvernement de Vichy</p>
+                        </details>
+                    </article>
+                </div>
+                <div class="grd-img-petites-img">
+                    <img src="/assets/img/fiche-img-1.jpg" alt="image fiche" class="zoomEffet">
+                    <div class="panneau-controle-img">
+                        <span>Survoler pour zoomer</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607ZM13.5 10.5h-6" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607ZM10.5 7.5v6m3-3h-6" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9 9V4.5M9 9H4.5M9 9 3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5 5.25 5.25" />
+                        </svg>
+
+                    </div>
+                    <div class="img-ligne-petites">
+                        <img src="/assets/img/fiche-img-2.jpg" alt="image fiche" class="zoomEffet">
+                        <img src="/assets/img/fiche-img-3.jpg" alt="image fiche" class="zoomEffet">
+                        <img src="/assets/img/fiche-img-4.jpg" alt="image fiche" class="zoomEffet ">
+                    </div>
+                </div>
+            </section>
         </main>
+        <a href="#nav-principale" class="remonter-svg"><svg xmlns="http://www.w3.org/2000/svg" fill="black"
+                viewBox="0 0 24 24" stroke-width="1.5" width="42px" stroke="white" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="m15 11.25-3-3m0 0-3 3m3-3v7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+        </a>
         <footer id="nav-pied-page" class="plein-plan">
             <div class="plan-de-site">
                 <div class="titre-liste">
@@ -305,21 +273,23 @@
                 <div class="titre-liste">
                     <h2>Newsletters</h2>
                     <form action="index.html">
-                            <input type="text" name="newsletters" id="newsletters" placeholder="Entrez votre email" aria-label="saisir mail pour recevoir newsletter"
-                                class="input-selection">
+                        <input type="text" name="newsletters" id="newsletters" placeholder="Entrez votre email"
+                            aria-label="saisir mail pour recevoir newsletter" class="input-selection">
                     </form>
                 </div>
             </div>
             <div class="copyright-site">
                 <span>© Design réalisé en collaboration par Patricia, Marc-Olivier et Mathieu</span>
                 <div class="icones-boite">
-                    <img src="assets/img/facebook.svg" alt="facebook">
-                    <img src="assets/img/instagram.svg" alt="instagram">
-                    <img src="assets/img/youtube.svg" alt="youtube">
+                    <img src="/assets/img/facebook.svg" alt="facebook">
+                    <img src="/assets/img/instagram.svg" alt="instagram">
+                    <img src="/assets/img/youtube.svg" alt="youtube">
                 </div>
             </div>
         </footer>
+
     </div>
+
 </body>
 
 </html>

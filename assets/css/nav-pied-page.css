@@ -10,7 +10,7 @@
 
 [id="nav-pied-page"] .plan-de-site{
     display: flex;
-    gap: var(--basique-gap);
+    gap: 30px;
     flex-wrap: wrap;
 }
 
@@ -27,12 +27,12 @@
 [id="nav-pied-page"] a{
     text-decoration-color: transparent;
     transition-property: text-decoration-color;
-	transition-duration: 500ms;
+	transition-duration: 200ms;
     font-size: var(--p-petit);
 }
 [id="nav-pied-page"] a:hover{
     text-decoration-color: var(--gris-50);
-    transition-duration: 500ms;
+    transition-duration: 200ms;
 }
 [id="nav-pied-page"] span{
     font-size: var(--p-petit);
@@ -47,13 +47,13 @@
     margin-top: var(--rythme-mince);
 }
 
-[id="nav-pied-page"] .plan-de-site+.copyright-site{
+[id="nav-pied-page"]>div+div{
     margin-top: var(--rythme-moyen);
 }
 
 [id="nav-pied-page"] .copyright-site{
     display: flex;
-    gap: var(--basique-gap);
+    gap: 30px;
     align-items: center;
 }
 
