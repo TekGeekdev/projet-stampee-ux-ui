@@ -1,6 +1,4 @@
-.carte{
-    max-width: 350px;
-}
+
 .carte .carte-img-avec-favoris{
     position: relative;
     background-color: bisque;
@@ -26,6 +24,8 @@
 .carte .txt-enchere-ligne{
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+    gap: 20px;
 }
 .carte .txt-enchere-colonne{
     display: flex;
@@ -48,5 +48,5 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: var(--basique-gap);
 }
-

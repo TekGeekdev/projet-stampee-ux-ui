@@ -20,7 +20,6 @@
 .filtres {
     border: solid 2px var(--couleur-tertiaire);
     padding: var(--rythme-mince);
-    
 }
 
 .filtres div{

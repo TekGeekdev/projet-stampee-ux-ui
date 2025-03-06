@@ -50,9 +50,16 @@
                     <option value="français" selected>Français</option>
                     <option value="anglais">Anglais</option>
                 </select>
-                <a href="#">Messagerie</a>
-                <a href="#">Enregistrement</a>
-                <a href="#">Connexion</a>
+                <a class="a-bar-princ" href="#">Messagerie</a>
+                <a class="a-bar-princ" href="#">Enregistrement</a>
+                <a class="a-bar-princ" href="#">Connexion</a>
+                <label for="menu-mobile">
+                    <svg width="32px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                      </svg>
+                      
+                </label>
+                <input type="checkbox" id="menu-mobile" aria-label="bouton pour menu mobile">
             </div>
             <ul class="barre-secondaire">
                 <li><a href="#">Enchères du moment</a></li>
@@ -60,7 +67,7 @@
                 <li><a href="#">Coup de coeur du lord</a></li>
                 <li><a href="#">Archives</a></li>
             </ul>
-            <input type="checkbox" id="menu-mobile" aria-label="bouton pour menu mobile">
+            
         </nav>
         <main id="cont-princ-aside-avec-main">
             <section class="galerie">
@@ -80,18 +87,19 @@
                                 <option value="dateRec">Date d'émission la plus récente</option>
                             </select>
                         </label>
+
                         <label for="format-carte">
                             <img src="assets/img/list.svg" alt="image disposition carte" width="24px">
-                            <input type="checkbox" id="format-carte">
+                            <input type="radio" id="format-carte" name="view">
                         </label>
                         <label for="format-liste">
                             <img src="assets/img/list-2.svg" alt="image disposition liste" width="24px">
-                            <input type="checkbox" id="format-liste">
+                            <input type="radio" id="format-liste" class="format-liste" name="view" checked>
                         </label>
                     </div>
                 </header>
-                <div class="grille-cartes">
-                    <article class="carte">
+                <div class="cartes">
+                    <article class="carte zoomEffet ombre-boite">
                         <div class="carte-img-avec-favoris">
                             <img class="carte-timbre-image" src="assets/img/nicolas-timbre" alt="image d'un timbre">
                             <input class="carte-timbre-favoris" type="checkbox" name="favoris" id="favoris" aria-label="icone pour mettre une enchère en favoris">
@@ -102,7 +110,7 @@
                                 <p class="timbre-lot">Lot n: 123456</p>
                             </div>
                             <div class="entete-enchere">
-                                <h3 class="timbre-titre">Nom du timbre</h3>
+                                <h3 class="timbre-titre">Nicolas les cheveux au vents</h3>
                                 <div class="txt-enchere-colonne">
                                     <div class="txt-enchere-ligne">
                                         <p class="timbre-annee">Année d'émission :</p>
@@ -131,7 +139,86 @@
                             </form>
                         </div>
                     </article>
-                   
+                    <article class="carte zoomEffet ombre-boite">
+                        <div class="carte-img-avec-favoris">
+                            <img class="carte-timbre-image" src="assets/img/nicolas-timbre" alt="image d'un timbre">
+                            <input class="carte-timbre-favoris" type="checkbox" name="favoris" id="favoris" aria-label="icone pour mettre une enchère en favoris">
+                        </div>
+                        <div class="carte-zone-txt">
+                            <div class="txt-enchere-ligne">
+                                <p class="timbre-status">Enchères en cours</p>
+                                <p class="timbre-lot">Lot n: 123456</p>
+                            </div>
+                            <div class="entete-enchere">
+                                <h3 class="timbre-titre">Nicolas les cheveux au vents</h3>
+                                <div class="txt-enchere-colonne">
+                                    <div class="txt-enchere-ligne">
+                                        <p class="timbre-annee">Année d'émission :</p>
+                                        <p>1850-1890</p>
+                                    </div>
+                                    <div class="txt-enchere-ligne">
+                                        <p class="timbre-etat">État :</p>
+                                        <p>Neuf</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="txt-enchere-colonne">
+                                <div class="txt-enchere-ligne">
+                                    <p class="timbre-prix"><b>Mise actuelle :</b></p>
+                                    <p><b>650 $</b></p>
+                                </div>
+                                <div class="txt-enchere-ligne">
+                                    <p class="timbre-temps-restant"><b>Temps restant :</b></p>
+                                    <p><b>3 jours 21 heures</b></p>
+                                </div>
+                            </div>
+                            <form action="index.html" class="mise">
+                                    <input type="number" name="prix" id="prix" class="input-selection variante-bleu"
+                                        placeholder="Entrez une mise" aria-label="Entrez une mise pour l'action">
+                                <input type="submit" value="Miser" class="bouton">
+                            </form>
+                        </div>
+                    </article>
+                    <article class="carte zoomEffet ombre-boite">
+                        <div class="carte-img-avec-favoris">
+                            <img class="carte-timbre-image" src="assets/img/nicolas-timbre" alt="image d'un timbre">
+                            <input class="carte-timbre-favoris" type="checkbox" name="favoris" id="favoris" aria-label="icone pour mettre une enchère en favoris">
+                        </div>
+                        <div class="carte-zone-txt">
+                            <div class="txt-enchere-ligne">
+                                <p class="timbre-status">Enchères en cours</p>
+                                <p class="timbre-lot">Lot n: 123456</p>
+                            </div>
+                            <div class="entete-enchere">
+                                <h3 class="timbre-titre">Nicolas les cheveux au vents</h3>
+                                <div class="txt-enchere-colonne">
+                                    <div class="txt-enchere-ligne">
+                                        <p class="timbre-annee">Année d'émission :</p>
+                                        <p>1850-1890</p>
+                                    </div>
+                                    <div class="txt-enchere-ligne">
+                                        <p class="timbre-etat">État :</p>
+                                        <p>Neuf</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="txt-enchere-colonne">
+                                <div class="txt-enchere-ligne">
+                                    <p class="timbre-prix"><b>Mise actuelle :</b></p>
+                                    <p><b>650 $</b></p>
+                                </div>
+                                <div class="txt-enchere-ligne">
+                                    <p class="timbre-temps-restant"><b>Temps restant :</b></p>
+                                    <p><b>3 jours 21 heures</b></p>
+                                </div>
+                            </div>
+                            <form action="index.html" class="mise">
+                                    <input type="number" name="prix" id="prix" class="input-selection variante-bleu"
+                                        placeholder="Entrez une mise" aria-label="Entrez une mise pour l'action">
+                                <input type="submit" value="Miser" class="bouton">
+                            </form>
+                        </div>
+                    </article>
                 </div>
             </section>
             <aside class="filtres">
@@ -250,6 +337,12 @@
                 </form>
             </aside>
         </main>
+        <a href="#nav-principale" class="remonter-svg"><svg xmlns="http://www.w3.org/2000/svg" fill="black"
+            viewBox="0 0 24 24" stroke-width="1.5" width="42px" stroke="white" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="m15 11.25-3-3m0 0-3 3m3-3v7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+        </svg>
+    </a>
         <footer id="nav-pied-page" class="plein-plan">
             <div class="plan-de-site">
                 <div class="titre-liste">

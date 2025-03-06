@@ -66,3 +66,16 @@
         max-width: 26px;
     }
 }
+
+@media screen and (max-width:780px){
+    [id="nav-pied-page"] .copyright-site{
+        flex-direction: column;
+    }
+
+}
+@media screen and (max-width:585px){
+    [id="nav-pied-page"] .copyright-site{
+        align-items: flex-start;
+    }
+
+}

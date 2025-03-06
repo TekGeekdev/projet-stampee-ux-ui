@@ -12,3 +12,11 @@
     /* FIXME: faut il utilise autre chose q'un width dans ce cas? */
         width: 35ch;
 }
+
+@media screen and (max-width:1100px){
+    [id="cont-princ-aside-avec-main"]{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}

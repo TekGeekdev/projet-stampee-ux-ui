@@ -8,7 +8,7 @@
 @import url("grille-cartes.css");
 
 /* composantes */
-@import url("nav-haut.css");
+@import url("nav-principale.css");
 @import url("cont-princ-aside-avec-main.css");
 @import url("filtre.css");
 @import url("nav-pied-page.css");
