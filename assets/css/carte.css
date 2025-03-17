@@ -10,6 +10,10 @@
 .carte .carte-timbre-favoris{
     appearance: none;
 }
+
+.carte img{
+    max-height: 220px;
+}
  
 .carte .carte-timbre-favoris:after {
     content: "";

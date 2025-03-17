@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enchères, ventes et estimations de timbres">
     <title>Accueil</title>
     <link rel="stylesheet" href="assets/css/import.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,8 +12,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <!-- Icones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
     <div class="enrobage">
         <nav id="nav-principale" class="plein-plan">
@@ -39,7 +42,8 @@
                     </g>
                 </svg>
                 <form action="index.html" class="input-large">
-                    <input type="text" placeholder="champ de recherche ex : Timbres rares du XIXe siècle" class="input-selection grand-champ" aria-label="champ de recherche">
+                    <input type="text" placeholder="champ de recherche ex : Timbres rares du XIXe siècle"
+                        class="input-selection grand-champ" aria-label="champ de recherche">
                 </form>
                 <select name="devises" id="devises" class="input-selection" aria-label="Devise monétaire">
                     <option value="euros">Euros</option>
@@ -54,10 +58,12 @@
                 <a class="a-bar-princ" href="#">Enregistrement</a>
                 <a class="a-bar-princ" href="#">Connexion</a>
                 <label for="menu-mobile">
-                    <svg width="32px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
-                      </svg>
-                      
+                    <svg width="32px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="white" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                    </svg>
+
                 </label>
                 <input type="checkbox" id="menu-mobile" aria-label="bouton pour menu mobile">
             </div>
@@ -67,14 +73,14 @@
                 <li><a href="#">Coup de coeur du lord</a></li>
                 <li><a href="#">Archives</a></li>
             </ul>
-            
+
         </nav>
-        <main id="cont-princ-aside-avec-main">
+        <main id="cont-princ-aside-avec-main" >
             <section class="galerie">
                 <header>
                     <h2>Galerie philatélique</h2>
                     <div>
-                        <label for="triage">Triez par : 
+                        <label for="triage">Triez par :
                             <select name="pays-edition" id="triage" class="input-selection variante-bleu">
                                 <option value="" selected disabled>choisissez un type</option>
                                 <option value="alphabetAsc">Ordre A-Z</option>
@@ -88,12 +94,14 @@
                             </select>
                         </label>
 
-                        <label for="format-carte">
-                            <img src="assets/img/list.svg" alt="image disposition carte" width="24px">
+                        <label for="format-carte" class="input-hover">
+                            <i class="fa-solid fa-border-all fa-lg"></i>
+                            Cartes
                             <input type="radio" id="format-carte" name="view">
                         </label>
-                        <label for="format-liste">
-                            <img src="assets/img/list-2.svg" alt="image disposition liste" width="24px">
+                        <label for="format-liste" class="input-hover">
+                            <i class="fa-solid fa-list fa-lg"></i>
+                            Liste
                             <input type="radio" id="format-liste" class="format-liste" name="view" checked>
                         </label>
                     </div>
@@ -101,8 +109,9 @@
                 <div class="cartes">
                     <article class="carte zoomEffet ombre-boite">
                         <div class="carte-img-avec-favoris">
-                            <img class="carte-timbre-image" src="assets/img/nicolas-timbre" alt="image d'un timbre">
-                            <input class="carte-timbre-favoris" type="checkbox" name="favoris" id="favoris" aria-label="icone pour mettre une enchère en favoris">
+                            <img class="carte-timbre-image" src="assets/img/timbre-carte-1.webp" alt="image d'un timbre">
+                            <input class="carte-timbre-favoris" type="checkbox" name="favoris"
+                                aria-label="icone pour mettre une enchère en favoris">
                         </div>
                         <div class="carte-zone-txt">
                             <div class="txt-enchere-ligne">
@@ -110,7 +119,7 @@
                                 <p class="timbre-lot">Lot n: 123456</p>
                             </div>
                             <div class="entete-enchere">
-                                <h3 class="timbre-titre">Nicolas les cheveux au vents</h3>
+                                <h3 class="timbre-titre">Homme au tein rouge</h3>
                                 <div class="txt-enchere-colonne">
                                     <div class="txt-enchere-ligne">
                                         <p class="timbre-annee">Année d'émission :</p>
@@ -129,12 +138,12 @@
                                 </div>
                                 <div class="txt-enchere-ligne">
                                     <p class="timbre-temps-restant"><b>Temps restant :</b></p>
-                                    <p><b>3 jours 21 heures</b></p>
+                                    <p class="texte-vert"><b>3 jours 21 heures</b></p>
                                 </div>
                             </div>
                             <form action="index.html" class="mise">
-                                    <input type="number" name="prix" id="prix" class="input-selection variante-bleu"
-                                        placeholder="Entrez une mise" aria-label="Entrez une mise pour l'action">
+                                <input type="number" name="prix" class="input-selection variante-bleu"
+                                    placeholder="Entrez une mise" aria-label="Entrez une mise pour l'action">
                                 <input type="submit" value="Miser" class="bouton">
                             </form>
                         </div>
@@ -142,7 +151,8 @@
                     <article class="carte zoomEffet ombre-boite">
                         <div class="carte-img-avec-favoris">
                             <img class="carte-timbre-image" src="assets/img/nicolas-timbre" alt="image d'un timbre">
-                            <input class="carte-timbre-favoris" type="checkbox" name="favoris" id="favoris" aria-label="icone pour mettre une enchère en favoris">
+                            <input class="carte-timbre-favoris" type="checkbox" name="favoris"
+                                aria-label="icone pour mettre une enchère en favoris">
                         </div>
                         <div class="carte-zone-txt">
                             <div class="txt-enchere-ligne">
@@ -169,20 +179,21 @@
                                 </div>
                                 <div class="txt-enchere-ligne">
                                     <p class="timbre-temps-restant"><b>Temps restant :</b></p>
-                                    <p><b>3 jours 21 heures</b></p>
+                                    <p class="texte-rouge"><b>12 heures</b></p>
                                 </div>
                             </div>
                             <form action="index.html" class="mise">
-                                    <input type="number" name="prix" id="prix" class="input-selection variante-bleu"
-                                        placeholder="Entrez une mise" aria-label="Entrez une mise pour l'action">
+                                <input type="number" name="prix" class="input-selection variante-bleu"
+                                    placeholder="Entrez une mise" aria-label="Entrez une mise pour l'action">
                                 <input type="submit" value="Miser" class="bouton">
                             </form>
                         </div>
                     </article>
                     <article class="carte zoomEffet ombre-boite">
                         <div class="carte-img-avec-favoris">
-                            <img class="carte-timbre-image" src="assets/img/nicolas-timbre" alt="image d'un timbre">
-                            <input class="carte-timbre-favoris" type="checkbox" name="favoris" id="favoris" aria-label="icone pour mettre une enchère en favoris">
+                            <img class="carte-timbre-image" src="assets/img/timbre-carte-2.webp" alt="image d'un timbre">
+                            <input class="carte-timbre-favoris" type="checkbox" name="favoris"
+                                aria-label="icone pour mettre une enchère en favoris">
                         </div>
                         <div class="carte-zone-txt">
                             <div class="txt-enchere-ligne">
@@ -190,7 +201,7 @@
                                 <p class="timbre-lot">Lot n: 123456</p>
                             </div>
                             <div class="entete-enchere">
-                                <h3 class="timbre-titre">Nicolas les cheveux au vents</h3>
+                                <h3 class="timbre-titre">Calèche au fond du bois</h3>
                                 <div class="txt-enchere-colonne">
                                     <div class="txt-enchere-ligne">
                                         <p class="timbre-annee">Année d'émission :</p>
@@ -209,12 +220,12 @@
                                 </div>
                                 <div class="txt-enchere-ligne">
                                     <p class="timbre-temps-restant"><b>Temps restant :</b></p>
-                                    <p><b>3 jours 21 heures</b></p>
+                                    <p class="texte-vert"><b>1 jours 22 heures</b></p>
                                 </div>
                             </div>
                             <form action="index.html" class="mise">
-                                    <input type="number" name="prix" id="prix" class="input-selection variante-bleu"
-                                        placeholder="Entrez une mise" aria-label="Entrez une mise pour l'action">
+                                <input type="number" name="prix" class="input-selection variante-bleu"
+                                    placeholder="Entrez une mise" aria-label="Entrez une mise pour l'action">
                                 <input type="submit" value="Miser" class="bouton">
                             </form>
                         </div>
@@ -284,7 +295,8 @@
                     </section>
                     <section class="select-a-droite">
                         <h3>Pays d'édition</h3>
-                        <select name="pays-edition" class="input-selection variante-bleu" aria-label="filtre pays édition">
+                        <select name="pays-edition" class="input-selection variante-bleu"
+                            aria-label="filtre pays édition">
                             <option value="" selected disabled>Sélectionner un pays</option>
                             <option value="US">États-Unis</option>
                             <option value="france">France</option>
@@ -333,16 +345,52 @@
                         </div>
                     </section>
                     <input type="submit" value="Rechercher" class="bouton">
-                    <input type="reset" value="Réinitialiser les filtres" class="bouton reset">
+                    <input type="reset" value="Réinitialiser les filtres" class="bouton as-secondary-btn">
                 </form>
             </aside>
         </main>
-        <a href="#nav-principale" class="remonter-svg"><svg xmlns="http://www.w3.org/2000/svg" fill="black"
-            viewBox="0 0 24 24" stroke-width="1.5" width="42px" stroke="white" class="size-6">
-            <path stroke-linecap="round" stroke-linejoin="round"
-                d="m15 11.25-3-3m0 0-3 3m3-3v7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-        </svg>
-    </a>
+
+        <aside id="panneau-confiance" class="plein-plan">
+            <h2>Pouquoi Stampee ?</h2>
+            <div>
+                <article>
+                    <i class="fa-regular fa-star fa-2xl"></i>
+                    <h3>Un choix qui vous ressemble</h3>
+                    <p>Découvrez une sélection de timbres originaux jusqu'á certaines pièces rares, certifiés par nos
+                        exeperts.</p>
+                </article>
+                <article>
+                    <i class="fa-solid fa-shield fa-2xl"></i>
+                    <h3>Protection des acheteurs</h3>
+                    <p>Nous assurons à tous les acheteurs d'utiliser des méthodes de paiement sécurisées, ainsi qu'une
+                        livraison
+                        en toute tranquilité.</p>
+                </article>
+                <article>
+                    <i class="fa-regular fa-hand-spock fa-2xl"></i>
+                    <h3>Service client dédié</h3>
+                    <p>Notre équipe est disponible pour vous accompagner et répondre à toutes vos questions.</p>
+                </article>
+                <article>
+                    <i class="fa-regular fa-comments fa-2xl"></i>
+                    <h3>Des milliers de collectionneurs satisfaits</h3>
+                    <p>Plus de 10 000 ventes réalisées avec succès. Une communauté de 2590 collectionneurs actifs nous
+                        fait
+                        confiance.</p>
+                </article>
+            </div>
+            <div>
+                <h3>Donc n'oublie pas de venir t'inscrire</h3>
+                <a href="#" class="bouton">Inscription</a>
+            </div>
+        </aside>
+        <a href="#nav-principale" class="remonter-svg" aria-label="bouton pour remonter la page"><svg
+                xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5" width="42px"
+                stroke="white" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="m15 11.25-3-3m0 0-3 3m3-3v7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+        </a>
         <footer id="nav-pied-page" class="plein-plan">
             <div class="plan-de-site">
                 <div class="titre-liste">
@@ -398,8 +446,8 @@
                 <div class="titre-liste">
                     <h2>Newsletters</h2>
                     <form action="index.html">
-                            <input type="text" name="newsletters" id="newsletters" placeholder="Entrez votre email" aria-label="saisir mail pour recevoir newsletter"
-                                class="input-selection">
+                        <input type="text" name="newsletters" id="newsletters" placeholder="Entrez votre email"
+                            aria-label="saisir mail pour recevoir newsletter" class="input-selection">
                     </form>
                 </div>
             </div>

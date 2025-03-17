@@ -11,6 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <!-- Icones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -63,7 +65,7 @@
             </ul>
             <input type="checkbox" id="menu-mobile" aria-label="bouton pour menu mobile">
         </nav>
-        <main>
+        <main class="fiche">
             <div class="fil-ariane">
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -113,8 +115,8 @@
                                     <div class="img-ligne-petites">
                                         <a href="https://www.americanexpress.com/fr-ca/"><img src="/assets/img/amex.svg"
                                                 alt="logo american express"></a>
-                                        <a href="https://www.mastercard.ca/fr-ca.html"><img src="/assets/img/mastercard.svg"
-                                                alt="logo mastercard"></a>
+                                        <a href="https://www.mastercard.ca/fr-ca.html"><img
+                                                src="/assets/img/mastercard.svg" alt="logo mastercard"></a>
                                         <a href="https://www.visa.ca/fr_CA"><img src="/assets/img/visa.svg"
                                                 alt="logo visa"></a>
                                         <a href="https://www.paypal.com/ca/home?locale.x=fr_CA"><img
@@ -123,7 +125,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- TODO: mettre en favoris -->
                     </article>
                     <article class="tiroir-vertical">
                         <details open>
@@ -178,7 +179,7 @@
                     </article>
                 </div>
                 <div class="grd-img-petites-img">
-                    <dialog open><img src="/assets/img/fiche-img-1.jpg" alt="image fiche" class="zoomEffet"></dialog>
+                    <img src="/assets/img/fiche-img-4.webp" alt="image fiche" class="zoomEffet">
                     <div class="panneau-controle-img">
                         <span>Survoler pour zoomer</span>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -205,19 +206,189 @@
 
                     </div>
                     <div class="img-ligne-petites">
-                        <img src="/assets/img/fiche-img-2.jpg" alt="image fiche" class="zoomEffet">
-                        <img src="/assets/img/fiche-img-3.jpg" alt="image fiche" class="zoomEffet">
-                        <img src="/assets/img/fiche-img-4.jpg" alt="image fiche" class="zoomEffet ">
+                        <img src="/assets/img/fiche-img-1.webp" alt="image fiche" class="zoomEffet">
+                        <img src="/assets/img/fiche-img-2.webp" alt="image fiche" class="zoomEffet">
+                        <img src="/assets/img/fiche-img-3.webp" alt="image fiche" class="zoomEffet ">
                     </div>
                 </div>
             </section>
+            <section>
+                <h2>Nos dernières enchères</h2>
+                <div class="grille-cartes">
+                    <article class="carte zoomEffet ombre-boite">
+                        <div class="carte-img-avec-favoris">
+                            <img class="carte-timbre-image" src="/assets/img/timbre-24cents.webp" alt="image d'un timbre">
+                            <input class="carte-timbre-favoris" type="checkbox" name="favoris"
+                                aria-label="icone pour mettre une enchère en favoris">
+                        </div>
+                        <div class="carte-zone-txt">
+                            <div class="entete-enchere">
+                                <h3 class="timbre-titre">Timbre de 24 cents</h3>
+                                <div class="txt-enchere-colonne">
+                                    <div class="txt-enchere-ligne">
+                                        <p class="timbre-etat">État :</p>
+                                        <p>Neuf</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="txt-enchere-colonne">
+                                <div class="txt-enchere-ligne">
+                                    <p class="timbre-prix"><b>Mise actuelle :</b></p>
+                                    <p><b>650 $</b></p>
+                                </div>
+                                <div class="txt-enchere-ligne">
+                                    <p class="timbre-temps-restant"><b>Temps restant :</b></p>
+                                    <p class="texte-vert"><b>3 jours 21 heures</b></p>
+                                </div>
+                            </div>
+                            <form action="index.html" class="mise">
+                                <input type="number" name="prix" class="input-selection variante-bleu"
+                                    placeholder="Entrez une mise" aria-label="Entrez une mise pour l'action">
+                                <input type="submit" value="Miser" class="bouton">
+                            </form>
+                        </div>
+                    </article>
+                    <article class="carte zoomEffet ombre-boite">
+                        <div class="carte-img-avec-favoris">
+                            <img class="carte-timbre-image" src="/assets/img/timbre-30cents.webp" alt="image d'un timbre">
+                            <input class="carte-timbre-favoris" type="checkbox" name="favoris"
+                                aria-label="icone pour mettre une enchère en favoris">
+                        </div>
+                        <div class="carte-zone-txt">
+                            <div class="entete-enchere">
+                                <h3 class="timbre-titre">Timbre de 30 cents</h3>
+                                <div class="txt-enchere-colonne">
+                                    <div class="txt-enchere-ligne">
+                                        <p class="timbre-etat">État :</p>
+                                        <p>Neuf</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="txt-enchere-colonne">
+                                <div class="txt-enchere-ligne">
+                                    <p class="timbre-prix"><b>Mise actuelle :</b></p>
+                                    <p><b>650 $</b></p>
+                                </div>
+                                <div class="txt-enchere-ligne">
+                                    <p class="timbre-temps-restant"><b>Temps restant :</b></p>
+                                    <p class="texte-vert"><b>15 jours 19 heures</b></p>
+                                </div>
+                            </div>
+                            <form action="index.html" class="mise">
+                                <input type="number" name="prix" class="input-selection variante-bleu"
+                                    placeholder="Entrez une mise" aria-label="Entrez une mise pour l'action">
+                                <input type="submit" value="Miser" class="bouton">
+                            </form>
+                        </div>
+                    </article>
+                    <article class="carte zoomEffet ombre-boite">
+                        <div class="carte-img-avec-favoris">
+                            <img class="carte-timbre-image" src="/assets/img/timbre-great-britain-penny-black.webp" alt="image d'un timbre">
+                            <input class="carte-timbre-favoris" type="checkbox" name="favoris"
+                                aria-label="icone pour mettre une enchère en favoris">
+                        </div>
+                        <div class="carte-zone-txt">
+                            <div class="entete-enchere">
+                                <h3 class="timbre-titre">Great Britain Penny Black</h3>
+                                <div class="txt-enchere-colonne">
+                                    <div class="txt-enchere-ligne">
+                                        <p class="timbre-etat">État :</p>
+                                        <p>Neuf</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="txt-enchere-colonne">
+                                <div class="txt-enchere-ligne">
+                                    <p class="timbre-prix"><b>Mise actuelle :</b></p>
+                                    <p><b>650 $</b></p>
+                                </div>
+                                <div class="txt-enchere-ligne">
+                                    <p class="timbre-temps-restant"><b>Temps restant :</b></p>
+                                    <p class="texte-rouge"><b>17 heures</b></p>
+                                </div>
+                            </div>
+                            <form action="index.html" class="mise">
+                                <input type="number" name="prix" class="input-selection variante-bleu"
+                                    placeholder="Entrez une mise" aria-label="Entrez une mise pour l'action">
+                                <input type="submit" value="Miser" class="bouton">
+                            </form>
+                        </div>
+                    </article>
+                    <article class="carte zoomEffet ombre-boite">
+                        <div class="carte-img-avec-favoris">
+                            <img class="carte-timbre-image" src="/assets/img/timbre-first-car-post.webp" alt="image d'un timbre">
+                            <input class="carte-timbre-favoris" type="checkbox" name="favoris"
+                                aria-label="icone pour mettre une enchère en favoris">
+                        </div>
+                        <div class="carte-zone-txt">
+                            <div class="entete-enchere">
+                                <h3 class="timbre-titre">First car canada post</h3>
+                                <div class="txt-enchere-colonne">
+                                    <div class="txt-enchere-ligne">
+                                        <p class="timbre-etat">État :</p>
+                                        <p>Neuf</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="txt-enchere-colonne">
+                                <div class="txt-enchere-ligne">
+                                    <p class="timbre-prix"><b>Mise actuelle :</b></p>
+                                    <p><b>650 $</b></p>
+                                </div>
+                                <div class="txt-enchere-ligne">
+                                    <p class="timbre-temps-restant"><b>Temps restant :</b></p>
+                                    <p class="texte-vert"><b>2 jours 15 heures</b></p>
+                                </div>
+                            </div>
+                            <form action="index.html" class="mise">
+                                <input type="number" name="prix" class="input-selection variante-bleu"
+                                    placeholder="Entrez une mise" aria-label="Entrez une mise pour l'action">
+                                <input type="submit" value="Miser" class="bouton">
+                            </form>
+                        </div>
+                    </article>
+                </div>
+            </section>
         </main>
+
+        <aside id="panneau-confiance" class="plein-plan">
+            <h2>Pouquoi Stampee ?</h2>
+            <div>
+                <article>
+                    <i class="fa-regular fa-star fa-2xl"></i>
+                    <h3>Un choix qui vous ressemble</h3>
+                    <p>Découvrez une sélection de timbres originaux jusqu'á certaines pièces rares, certifiés par nos
+                        exeperts.</p>
+                </article>
+                <article>
+                    <i class="fa-solid fa-shield fa-2xl"></i>
+                    <h3>Protection des acheteurs</h3>
+                    <p>Nous assurons à tous les acheteurs d'utiliser des méthodes de paiement sécurisées, ainsi qu'une
+                        livraison
+                        en toute tranquilité.</p>
+                </article>
+                <article>
+                    <i class="fa-regular fa-hand-spock fa-2xl"></i>
+                    <h3>Service client dédié</h3>
+                    <p>Notre équipe est disponible pour vous accompagner et répondre à toutes vos questions.</p>
+                </article>
+                <article>
+                    <i class="fa-regular fa-comments fa-2xl"></i>
+                    <h3>Des milliers de collectionneurs satisfaits</h3>
+                    <p>Plus de 10 000 ventes réalisées avec succès. Une communauté de 2590 collectionneurs actifs nous
+                        fait
+                        confiance.</p>
+                </article>
+            </div>
+        </aside>
+
         <a href="#nav-principale" class="remonter-svg"><svg xmlns="http://www.w3.org/2000/svg" fill="black"
                 viewBox="0 0 24 24" stroke-width="1.5" width="42px" stroke="white" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round"
                     d="m15 11.25-3-3m0 0-3 3m3-3v7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
             </svg>
         </a>
+
         <footer id="nav-pied-page" class="plein-plan">
             <div class="plan-de-site">
                 <div class="titre-liste">
@@ -287,8 +458,8 @@
                 </div>
             </div>
         </footer>
-
     </div>
+
 
 </body>
 

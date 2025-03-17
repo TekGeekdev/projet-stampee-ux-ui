@@ -1,6 +1,6 @@
 /* general */
 @import url("general.css");
-@import url("langue.css");
+@import url("root.css");
 
 /* layout */
 @import url("body.css");
@@ -22,6 +22,6 @@
 @import url("div-et-div-rev-avec-sticky.css");   
 @import url("panneau-controle-img.css");   
 @import url("fil-ariane.css");   
-
-/* devtools */
-@import url("devTools.css");
+@import url("input-hover.css");   
+@import url("panneau-confiance.css");   
+@import url("fiche.css");   

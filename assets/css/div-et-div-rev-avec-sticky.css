@@ -15,8 +15,15 @@
     align-self: flex-start;
 }
 
+.div-et-div-rev-avec-sticky article+article{
+    margin-top: var(--rythme-petit)
+}
+
+
 .div-et-div{
     display: flex;
+    flex-wrap: wrap;
+    gap: var(--basique-gap);
 }
 .div-et-div.space-between{
     justify-content: space-between;
@@ -25,4 +32,3 @@
 .div-et-div.center{
     align-items: center;
 }
-/* FIXME: corriger les class d'en haut pour les adapter a celle du bas */

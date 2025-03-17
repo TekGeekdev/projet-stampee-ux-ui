@@ -10,7 +10,7 @@
 }
 [id="cont-princ-aside-avec-main"] .filtres{
     /* FIXME: faut il utilise autre chose q'un width dans ce cas? */
-        width: 35ch;
+        max-width: 40ch;
 }
 
 @media screen and (max-width:1100px){

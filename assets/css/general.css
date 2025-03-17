@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    
 }
 img{
     max-width: 100%;
@@ -15,6 +17,7 @@ input {
 
 h1,h2{
     font-family: var(--police-titre);
+    letter-spacing: .2rem;
 }
 header+article{
     margin-top: var(--rythme-regulier);
@@ -35,8 +38,28 @@ main>div+section{
     margin-top: var(--rythme-moyen-clp);
 }
 
+section+section{
+    margin-top: var(--rythme-moyen);
+}
+
+main+aside{
+    margin-top: var(--rythme-large-clp);
+}
+
 article form+div{
     margin-top: var(--rythme-petit);
+}
+main section>h2+*{
+    margin-top: var(--rythme-petit);
+}
+
+
+.texte-vert{
+    color: var(--couleur--validation);
+}
+
+.texte-rouge{
+    color: var(--couleur-annulation);
 }
 
 .border-bottom-classique{
